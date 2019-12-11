@@ -54,14 +54,14 @@ items:
     spec:
     replicas: 1
     selector:
-      io.kompose.service: openldap
+      deploymentconfig: ${NAME}
     strategy:
       resources: {}
     template:
       metadata:
         creationTimestamp: null
         labels:
-          io.kompose.service: openldap
+          app: openldap
       spec:
         containers:
         - args:
