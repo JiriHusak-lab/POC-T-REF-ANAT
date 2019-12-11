@@ -23,22 +23,22 @@ items:
     value: docker.io/jhusak/anatldap
   objects:
 
-##IMAGE STREAM
-  - apiVersion: v1
-    kind: ImageStream
-    metadata:
-      creationTimestamp: null
-      labels:
-        app: openldap
-      name: openldap
-    spec:
-      tags:
-      - annotations: null
-        from:
-          kind: DockerImage
-    #      name: osixiaXXXXX/openldap:latest
-          name: docker.io/jhusak/anatldap
-        name: latest
+###IMAGE STREAM
+#  - apiVersion: v1
+#    kind: ImageStream
+#    metadata:
+#      creationTimestamp: null
+#      labels:
+#        app: openldap
+#      name: openldap
+#    spec:
+#      tags:
+#      - annotations: null
+#        from:
+#          kind: DockerImage
+#    #      name: osixiaXXXXX/openldap:latest
+#          name: docker.io/jhusak/anatldap
+#        name: latest
 
 ## DEPLOYMENT CONFIG
   - apiVersion: v1
