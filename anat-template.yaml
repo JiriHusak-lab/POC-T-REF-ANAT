@@ -55,8 +55,10 @@ items:
         metadata:
           creationTimestamp: null
           labels:
+            deploymentconfig: ${NAME}
             app: openldap
       spec:
+        hostname: ${NAME}
         containers:
         - args:
           - --copy-service
