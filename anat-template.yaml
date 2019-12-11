@@ -38,11 +38,7 @@ items:
           kind: DockerImage
     #      name: osixia/openldap:latest
           name: docker.io/jhusak/anatldap
-        generation: null
-        importPolicy: {}
         name: latest
-    status:
-      dockerImageRepository: ""
 
 ## DEPLOYMENT CONFIG
   - apiVersion: v1
@@ -55,8 +51,6 @@ items:
     replicas: 1
     selector:
       deploymentconfig: ${NAME}
-    strategy:
-      resources: {}
     template:
       metadata:
         creationTimestamp: null
@@ -112,12 +106,11 @@ items:
             value: "3.1"
           - name: LDAP_TLS_VERIFY_CLIENT
             value: demand
-          image: ' '
+          image: ${IMAGE}
           name: openldap
           ports:
           - containerPort: 389
           - containerPort: 636
-          resources: {}
           stdin: true
           tty: true
         restartPolicy: Always
@@ -132,7 +125,6 @@ items:
           kind: ImageStreamTag
           name: openldap:latest
       type: ImageChange
-    status: {}
   
 ## SERVICE
   - apiVersion: v1
