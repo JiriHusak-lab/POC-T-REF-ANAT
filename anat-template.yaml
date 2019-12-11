@@ -48,14 +48,14 @@ items:
       labels:
         app: openldap
     spec:
-    replicas: 1
-    selector:
-      deploymentconfig: ${NAME}
-    template:
-      metadata:
-        creationTimestamp: null
-        labels:
-          app: openldap
+      replicas: 1
+      selector:
+        deploymentconfig: ${NAME}
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: openldap
       spec:
         containers:
         - args:
