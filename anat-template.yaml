@@ -7,7 +7,7 @@ items:
   metadata:
     name: openldap
     annotations:
-      description: 1-pod Open LDAP
+      description: 1 pod Open LDAP
       tags: Open LDAP
     labels:
       app: openldap
@@ -23,7 +23,7 @@ items:
     value: docker.io/jhusak/anatldap
   objects:
 
-###IMAGE STREAM
+###IMAGE STREAM 
 #  - apiVersion: v1
 #    kind: ImageStream
 #    metadata:
