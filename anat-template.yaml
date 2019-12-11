@@ -134,7 +134,7 @@ items:
       type: ImageChange
     status: {}
   
-  ## SERVICE
+## SERVICE
   - apiVersion: v1
     kind: Service
     metadata:
