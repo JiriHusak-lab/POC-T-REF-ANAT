@@ -19,7 +19,7 @@ items:
   - name: IMAGE
     description: Image 
     required: true
-    #value: osixia/openldap:latest
+    #value: osixiaXXXXX/openldap:latest
     value: docker.io/jhusak/anatldap
   objects:
 
@@ -36,7 +36,7 @@ items:
       - annotations: null
         from:
           kind: DockerImage
-    #      name: osixia/openldap:latest
+    #      name: osixiaXXXXX/openldap:latest
           name: docker.io/jhusak/anatldap
         name: latest
 
