@@ -10,7 +10,8 @@ spec:
   - annotations: null
     from:
       kind: DockerImage
-      name: osixia/openldap:latest
+#      name: osixia/openldap:latest
+      name: docker.io/jhusak/anatldap
     generation: null
     importPolicy: {}
     name: latest
