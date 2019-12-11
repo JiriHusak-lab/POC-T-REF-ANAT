@@ -41,8 +41,6 @@ items:
       generation: null
       importPolicy: {}
       name: latest
-  status:
-    dockerImageRepository: ""
 
 ## DEPLOYMENT CONFIG
   - apiVersion: v1
